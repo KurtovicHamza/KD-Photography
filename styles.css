@@ -1,0 +1,398 @@
+@media screen and (min-width: 950px) {
+    body {
+     position: relative;
+     top: 0%;
+     bottom: 0%;
+     right: 10%;
+     left: 0%;
+     
+     }
+    }
+
+    
+*{
+box-sizing: border-box;
+margin: 0;
+
+}
+
+
+li, a{
+    transition :all 0.2s ease-in;
+}
+
+#navbar li, a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    display: inline-flex;
+    margin: 0 0 0 14px;
+    justify-content: space-around;
+}
+
+/*for all links to have no underline*/
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-right: 60px;
+    height:130px;
+    
+}
+
+
+.logo{
+    width: 400px;
+    height: auto;
+        
+}
+
+.navbar{
+    display: inline-block;
+    justify-content: space-between;
+    
+}
+
+/* Styling the links in navbar
+*/
+  
+  #navbar a:visited {
+    color: ivory;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    color: rgb(255, 243, 134);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  #navbar a::after {
+    color: rgb(239, 107, 107);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  #naslov{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+  }
+
+  h1{
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(255, 253, 232);
+    cursor:default;
+}
+  
+h4{
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: blanchedalmond;
+  cursor:default;
+}
+
+/*Background img of body*/
+html{
+  /*  background-image: url("/Project5-Keno/public/imgs/background.jpg");*/
+       background-image: url("imgs/background.jpg");
+
+    background-attachment: fixed;
+    size: auto;
+}
+  
+/*copyright*/
+  .copy{
+      text-align:right;
+      position: fixed;
+      bottom: 70px;
+      right: 0;
+      padding-right: 30px;
+      font-family: cursive;
+      font-size: 25px;
+    color: blanchedalmond;
+    cursor:default;
+  }
+
+ 
+/*Styling footer*/
+footer {
+ 
+    background-color: #000429;
+     padding-bottom: 70px;
+  padding-left: 0;
+    height: 60px;
+    position: fixed;
+   bottom: 0px;
+   width: 100%;
+
+}
+.FooterDIV{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-self: center;
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px 5px 5px;
+    border-radius: 50%;
+}
+
+/* Styling the links in footer*/
+
+  
+ #icons a:visited {
+    color:snow;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+ #icons a:hover {
+    color: rgb(110, 169, 247);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.icons{
+    text-align: center;
+    text-decoration: none;
+}
+
+#titleP{
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+
+.gallery{
+  margin: 12px 120px;
+  padding-bottom: 100px;
+}
+
+.gallery img{
+ 
+  padding: 10px;
+  width: 400px;
+  height: 400px;
+
+}
+
+#btn {
+  position: fixed;
+  bottom: 110px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+
+}
+
+#arw{
+  width: 120px;
+  height: 60px;
+  
+}
+
+#about{
+  display: flex;
+  justify-content: space-around;
+}
+
+#keno{
+	border-radius: 12%;
+	margin-right: 30px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+  width: 500px;
+  height: 500px;
+}
+#author{
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 160px;
+	color: aliceblue;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-style: oblique;
+
+}
+
+
+/*Gallery in portfolio*/
+.container1
+{
+	width: 100%;
+	height: 80%;
+}
+.trans
+{
+  /*for image disappearing*/
+	transition: all 2s ease;
+	
+}
+.top
+{
+	display: inline-flexbox; /*bio flex samo*/
+	width: 85%;
+	height: 80vh;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10%;
+}
+.top ul
+{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+}
+.top ul li
+{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 80%; /*image height*/
+	overflow: hidden;
+}
+
+.top ul li::before
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	background-color: rgba(153, 132, 73, 0.5);
+	content: '';
+	color: white;
+	opacity: 0.3;
+	text-align: center;
+	box-sizing: border-box;
+	pointer-events: none;
+	transition: all 0.7s ease; /*for highlighting when hovered*/
+	
+}
+.top ul li:hover::before
+{
+	opacity: 0.1;
+	background-color: none;
+}
+.top ul li img
+{
+	width:100%;
+	height: auto;
+	overflow: hidden;
+}
+.lightbox
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+}
+.lightbox img
+{
+	
+	max-width: 90%;
+	max-height: 70%;
+	position: relative;
+	top: 50%;
+	/* Transition */
+	transition: all 1.3s ease; /*for appearing on screen when clicked*/
+}
+.lightbox:target
+{
+	outline: none;
+	/*top: 0;*/
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 1.2s ease; /*time needed to fully load when picture appears*/
+
+}
+.lightbox:target img
+{
+	
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+
+.top img{
+	
+margin-right: 10px;
+margin-bottom: 10px;
+margin-top: 10px;
+
+}
+#gal{
+	width:300px;
+	height: 300px;
+}
+
+
+/*about*/
+
+h2{
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  color: blanchedalmond;
+  cursor:default;
+}
+
+#rowAb{
+  margin-top: 50px;
+  display:flex;
+  margin-bottom: 120px;
+
+}
+
+.col-sm-6{
+ 
+  width:50%;
+  text-align: center;
+}
+
+#video{
+ 
+  width:90%;
+  height:300px;
+}
+
+#mapa{
+ 
+  width:90%;
+  height:300px;
+}
